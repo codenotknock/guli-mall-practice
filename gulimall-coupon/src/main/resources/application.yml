@@ -1,0 +1,27 @@
+
+spring:
+  application:
+    name: gulimall-coupon
+
+  datasource:
+    url: jdbc:mysql://47.95.218.219:3306/gulimall_sms?useSSL=FALSE&characterEncoding=UTF-8&serverTimeZone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  cloud:
+    nacos:
+      discovery:
+        server-addr: xxx.xxx.xxx.xxxx:8848
+
+  mybatis-plus:
+    mapper-locations: classpath:/mapper/**/*.xml  # MapperScan
+    global-config:
+      db-config:
+        id-type: auto # auto \u4E3B\u952Eid\u81EA\u52A8\u9012\u589EID
+        logic-delete-value: 1 # \u903B\u8F91\u5220\u9664
+        logic-not-delete-value: 0
+server:
+  port: 8000
+
+
+

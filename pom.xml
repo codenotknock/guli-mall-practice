@@ -8,12 +8,25 @@
         <version>2.2.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <packaging>pom</packaging>
     <groupId>com.codenotknock</groupId>
     <artifactId>gulimall</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>gulimall</name>
-    <description>根目录，聚合服务</description>
+    <description>父工程，聚合服务</description>
+
+<!--    子模块-->
+    <modules>
+        <module>gulimall-common</module>
+        <module>gulimall-product</module>
+        <module>gulimall-ware</module>
+        <module>gulimall-coupon</module>
+        <module>gulimall-order</module>
+        <module>gulimall-member</module>
+    </modules>
+
     <properties>
+<!--        本项目版本说明-->
         <java.version>1.8</java.version>
         <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
         <spring-cloud-alibaba.version>2.2.1.RELEASE</spring-cloud-alibaba.version>
