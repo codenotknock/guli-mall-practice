@@ -23,6 +23,8 @@
         <module>gulimall-coupon</module>
         <module>gulimall-order</module>
         <module>gulimall-member</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
     </modules>
 
     <properties>
@@ -50,6 +52,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.4</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.4</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
