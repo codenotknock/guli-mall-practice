@@ -32,12 +32,9 @@ build/
 ### VS Code ###
 .vscode/
 
-
-*.iml
 **/.mvn
 **/mvnw
 **/mvnw.cmd
 **/target/
 **/HELP.md
 **/.gitignore
-.idea
